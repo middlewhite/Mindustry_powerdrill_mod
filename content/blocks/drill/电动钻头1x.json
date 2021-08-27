@@ -1,0 +1,45 @@
+{
+	"name": "电动钻头1x",
+	"description": "使用电力驱动的1x1钻头",
+	"type": "Drill",
+	"health": 160,	//生命值
+	//"haspower": true,	//需要电力
+	"size": 1,	//大小
+	"itemCapacity": 3,	//物品容量
+	//"liquidCapacity": 0,	//液体容量
+	"tier": 3,	//层级
+	"drillTime": 300,	//产出时间
+	"liquidBoostIntensity": 1.0,	//液体增强
+	"rotateSpeed": 3.0,	//转速
+	"drawRim": false,
+	"drawMineItem": false,
+	"warmupSpeed": 0.01,
+
+	"results": [	//产出
+		{ "item": "sand", "amount": 5},
+		{ "item": "dark-sand", "amount": 5},
+		{ "item": "copper", "amount": 5},
+		{ "item": "lead", "amount": 5},
+		{ "item": "coal", "amount": 5},
+		{ "item": "titanium", "amount": 5}
+    ],
+
+
+	"requirements": [	//建造所需
+		{ "item": "copper", "amount": 20},
+		{ "item": "graphite", "amount": 10},
+		{ "item": "lead", "amount": 10}
+	],
+	"consumes": {	//消耗
+		"power": 0.2
+		//"liquid": {	//液体
+		//	"liquid": "water", 	//水
+		//	"amount": 0.1,
+		//	"booster": true,	//加速
+		//	"optional": true	//可选的
+		//}
+	},
+	//"drillEffect": ""
+	"category": "production",	//类别
+	"research": "power-node"	//科技解锁
+}
